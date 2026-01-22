@@ -1,22 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-</head>
+    <title>EasyBin - Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .login-container {
+            background: #ffffff;
+            padding: 30px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .login-container label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #2ecc71;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background: #27ae60;
+        }
+
+        .login-container p {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-container a {
+            color: #27ae60;
+            text-decoration: none;
+        }
+    </style>
+</head>
 <body>
-    <div>
-        <form action="/admin/dashboard" method="post">
-            <label for="username">Username:</label><br><br>
-            <input type="text" id="username" name="username" required><br><br>
-            <label for="password">Password:</label><br><br>
-            <input type="password" id="password" name="password" required><br><br>
+
+    <div class="login-container">
+        <h2>EasyBin Login</h2>
+        <form onsubmit="return loginUser()">
+             <form action="/admin/dashboard" method="post"></form>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
             <button type="submit">Login</button>
         </form>
+        
     </div>
-</body>
 
+    <script>
+        function loginUser() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "admin" && password === "12345") {
+                alert("Login successful!");
+            } else {
+                alert("Invalid username or password");
+            }
+            return false; // prevent form refresh
+        }
+    </script>
+
+</body>
 </html>
