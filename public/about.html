@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About EasyBin</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7fff7;
+      color: #1f6f3a;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0f4b26;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 16px;
+      margin: 15px 0;
+    }
+
+    .highlight {
+      color: #1f6f3a;
+      font-weight: bold;
+    }
+
+    .box {
+      border: 2px solid #1f6f3a;
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 20px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-6px);
+      background: #f0fff0;
+    }
+
+    .box h2 {
+      margin-top: 0;
+      color: #1f6f3a;
+    }
+
+    .box ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .box li {
+      margin: 8px 0;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #0f4b26;
+    }
+
+    .icon {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: #1f6f3a;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover .icon {
+      transform: rotate(20deg);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>About EasyBin</h1>
+
+  <p>
+    The idea for <span class="highlight">EasyBin</span> originated from observing public spaces where waste bins often overflow due to the lack of timely information and are sometimes difficult to locate, causing delays in waste collection. At the same time, housekeeping staff spend valuable time manually checking bins that may not require immediate attention, leading to inefficiency and unhygienic conditions.
+  </p>
+
+  <div class="box">
+    <h2><span class="icon">📌</span>Project Overview</h2>
+    <p>
+      Recognizing the need for a smarter, technology-driven solution, we designed <span class="highlight">EasyBin</span>, a system that digitally locates nearby dustbins, displays their real-time status on a centralized dashboard, and automatically notifies housekeeping staff when action is required. It uses IoT sensors to monitor bin levels and updates the dashboard instantly.
+    </p>
+  </div>
+
+  <div class="box">
+    <h2><span class="icon">🧠</span>How It Works</h2>
+    <ul>
+      <li>IoT sensors detect bin fullness and send data to the server.</li>
+      <li>Dashboard shows real-time bin status and location.</li>
+      <li>Automatic alerts are sent to housekeeping staff when bins are full.</li>
+      <li>Map view helps locate bins quickly and efficiently.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2><span class="icon">🌿</span>Goal & Benefits</h2>
+    <p>
+      This project aims to reduce manual effort, improve bin visibility, prevent overflow situations, and promote cleaner, more sustainable environments through intelligent waste management. EasyBin supports better hygiene, saves time, and helps maintain organized public spaces.
+    </p>
+  </div>
+
+  <div class="footer">
+    EasyBin — Smart Waste Management for a Cleaner Future
+  </div>
+</div>
+
+</body>
+</html>
